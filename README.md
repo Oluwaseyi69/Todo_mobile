@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+ Welcome to Todo Mobile App 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -16,35 +16,20 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Thought Process
+   ```
+   Since the whole idea if to achieve a simple but yet user friendly mobile app, and to be secured as well.
+   The first thing was to properly design the code structure for readability and clean code, following  one of the software engineering design pattern which is Separation of Concerns, where i have the Service layer which strictly contains the logic of the app, screens where each screen been implemented and then the component. In other to Authenticate and Authorize user, AsyncStorage was used to set and get tokens that is been generated from the back-end, I used the backend Api that I built for this project.
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. Technology Used
+   ```
+   React Native (JavaScript)
+   React Navigation
+   Tailwind CSS...
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   Backend
+   Axios for HTTP client request and response API communications.
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   Token-based Auth: All protected routes are accessed using JWTs, securely stored and attached via headers.
+    ```
