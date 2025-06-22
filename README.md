@@ -29,6 +29,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    Tailwind CSS...
 
    Backend
+   Nodejs and express
+   MongoDb 
    Axios for HTTP client request and response API communications.
 
    Token-based Auth: All protected routes are accessed using JWTs, securely stored and attached via headers.
